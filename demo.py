@@ -9,7 +9,7 @@ if not os.path.exists(output_folder):
     os.makedirs(output_folder)
     print(f"Created folder: {output_folder}")
 
-cap = cv2.VideoCapture(2, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 if not cap.isOpened():
     print("Error: Could not open webcam")
